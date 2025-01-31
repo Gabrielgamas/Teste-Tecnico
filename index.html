@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste Técnico</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Verificador de Fibonacci, Inversor de Texto e Analisador de Faturamento
+      </h1>
+
+      <div class="input-section">
+        <label for="numFibonacci"
+          >Digite um número para verificar se está na sequência de
+          Fibonacci:</label
+        >
+        <div>
+          <input type="number" id="numFibonacci" />
+          <button onclick="verificarFibonacci()">Verificar</button>
+        </div>
+        <div id="divFibonacci" class="resultado-container">
+          <p id="resultadoFibonacci"></p>
+        </div>
+      </div>
+
+      <div class="input-section">
+        <label for="textoInvertido">Digite uma frase para inverter:</label>
+        <div>
+          <input type="text" id="textoInvertido" />
+          <button onclick="inverterTexto()">Inverter</button>
+        </div>
+        <div id="divTexto" class="resultado-container">
+          <p id="resultadoTexto"></p>
+        </div>
+      </div>
+
+      <div class="input-section">
+        <button onclick="calcularFaturamento()">
+          Analisar Faturamento Diário
+        </button>
+        <div id="divFaturamento" class="resultado-container">
+          <p id="resultadoFaturamento"></p>
+        </div>
+      </div>
+
+      <div class="input-section">
+        <button onclick="calcularPercentuais()">
+          Calcular Percentual de Faturamento
+        </button>
+        <div id="divPercentual" class="resultado-container">
+          <p id="resultadoPercentual"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
